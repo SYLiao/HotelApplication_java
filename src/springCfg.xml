@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  
+    
+  <bean id="Hotel1" class="javab.Hotel">
+    <property name="name" >
+    <value>"Summit"</value>
+    </property>
+    <property name="location">
+    <value>"New Jersey"</value>
+    </property>
+    <property name="theRooms">
+    	<list>
+    		<ref bean="Room1" />
+    		<ref bean="Room2" />
+    		<ref bean="Room3" />
+    	</list>
+    </property>
+  </bean> 
+  
+  
+  <bean id="Room1" class="javab.Room">
+    <property name="roomNum">
+    <value>2</value>
+    </property>
+    <property name="bedType">
+    	<value>"Queen"</value></property>
+    <property name="rate">
+    	<value>12.5</value></property>
+    <property name="somking">
+    	<value>n</value></property>
+  </bean>
+  
+    <bean id="Room2" class="javab.Room">
+    <property name="roomNum">
+    <value>3</value>
+    </property>
+    <property name="bedType">
+    	<value>"King"</value></property>
+    <property name="rate">
+    	<value>80</value></property>
+    <property name="somking">
+    	<value>y</value></property>
+  </bean>
+  
+  
+      <bean id="Room3" class="javab.Room">
+    <property name="roomNum">
+    <value>6</value>
+    </property>
+    <property name="bedType">
+    	<value>"King"</value></property>
+    <property name="rate">
+    	<value>100</value></property>
+    <property name="somking">
+    	<value>y</value></property>
+  </bean>
+  
+ </beans>

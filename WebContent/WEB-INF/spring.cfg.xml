@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE beans SYSTEM "beans.dtd">
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  
+    
+      <bean id="Hotel1" class="java.Hotel">
+    <property name="Name" >
+    <value>"Summit"</value>
+    </property>
+    <property name="Location">
+    <value>"New Jersey"</value>
+    </property>
+    </bean> 
+    <bean id="Room1" class="java.Room" property="">
+    <property name="roomNum">
+    <value>2</value>
+    </property>
+    <property name="bedType">
+    	<value>"Queen"</value></property>
+    <property Name="rate">
+    	<value>12.5</value></property>
+    <property name="smoking">
+    	<value>'n'</value></property></bean>
+    </beans>
